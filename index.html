@@ -2,10 +2,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="STEAR — Self-Improving Robot Learning Through Experience and Reflection. A CoRL 2026 half-day workshop on closed-loop, self-improving robot learning from physical experience.">
-<meta name="keywords" content="Self-Improving Robotics, Execution Trace Diagnosis, Policy Adaptation, CoRL 2026">
+<meta name="description" content="STEAR — Self-Improving Robot Learning Through Experience and Reflection. An ICRA 2027 workshop on closed-loop, self-improving robot learning from physical experience.">
+<meta name="keywords" content="Self-Improving Robotics, Execution Trace Diagnosis, Policy Adaptation, ICRA 2027">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>STEAR — Self-Improving Robot Learning Workshop (CoRL 2026)</title>
+<meta property="og:title" content="STEAR — Self-Improving Robot Learning Workshop at ICRA 2027">
+<meta property="og:description" content="Self-Improving Robot Learning Through Experience and Reflection at ICRA 2027 in Seoul, South Korea.">
+<meta property="og:image" content="https://stear-workshop.github.io/data/banner-icra2027.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://stear-workshop.github.io/">
+<title>STEAR — Self-Improving Robot Learning Workshop at ICRA 2027</title>
 
 <link href="./data/css" rel="stylesheet">
 <link rel="stylesheet" href="./data/bulma.min.css">
@@ -15,14 +20,14 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23FF4500' d='M16 5a11 11 0 1 0 10.4 14.6l-3.1-1.1A7.7 7.7 0 1 1 16 8.3V12l7-4.5L16 3z'/%3E%3C/svg%3E">
 
 <style>
-  /* Hero banner — city-skyline venue photo (like e2e3d's CVPR Denver banner) */
+  /* ICRA 2027 hero banner — Seoul, robotics, and closed-loop learning */
   .page-header1 {
     position: relative;
-    background-image: url('./data/banner.jpg');
+    background-image: url('./data/banner-icra2027.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    padding-bottom: 1rem;
+    background-position: center 58%;
+    padding-bottom: 1.5rem;
   }
 
   .page-header1::before {
@@ -32,7 +37,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.45);
+    background: linear-gradient(90deg, rgba(3, 16, 42, 0.76), rgba(8, 30, 65, 0.5), rgba(3, 16, 42, 0.68));
   }
 
   .hero-body {
@@ -41,7 +46,7 @@
   }
 
   .publication-title {
-    color: #FF4500;
+    color: #ffffff;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   }
@@ -56,8 +61,24 @@
 
   .button {
     border-radius: 10px;
-    background: #ffffffd0;
+    background: #ffffffe6;
     padding: 5px 15px 5px 15px;
+    border-color: transparent;
+    color: #12325c;
+    font-weight: 600;
+  }
+
+  .conference-line {
+    color: #dff7ff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.85);
+  }
+
+  .conference-details {
+    color: #ffffff;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    margin-top: -0.5rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.85);
   }
 
   /* Modern, clean style for organizers (verbatim from the e2e3d template) */
@@ -105,6 +126,31 @@
     .organizer-photo { width: 120px; height: 120px; }
   }
   @media screen and (max-width: 768px) {
+    .page-header1 {
+      background-position: 26% center;
+    }
+    .hero-body {
+      padding: 2rem 1.25rem;
+    }
+    .publication-title {
+      font-size: 2.1rem !important;
+      line-height: 1.1;
+    }
+    .conference-line {
+      font-size: 1rem !important;
+      line-height: 1.25;
+    }
+    .conference-details {
+      font-size: 0.9rem;
+      margin-top: 0;
+    }
+    .subtitle .button {
+      font-size: 0.9rem;
+      margin-bottom: 0.35rem;
+    }
+    .has-text-justified {
+      text-align: left !important;
+    }
     .organizer-photo { width: 100px; height: 100px; }
     .organizer-name { font-size: 1rem; }
     .organizer-affiliation { font-size: 0.8rem; }
@@ -118,10 +164,11 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title" style="color:#FF7F11">Self-Improving Robot Learning<br>Through Experience and Reflection<br></h1>
-            <h2 class="title is-5" style="color:#EFECCA;">
-              <strong>in conjunction with CoRL 2026</strong>
+            <h1 class="title is-1 publication-title">Self-Improving Robot Learning<br>Through Experience and Reflection<br></h1>
+            <h2 class="title is-5 conference-line">
+              <strong>at the 2027 IEEE International Conference on Robotics and Automation (ICRA 2027)</strong>
             </h2>
+            <p class="conference-details">May 24 or 28, 2027 · Coex, Seoul, Republic of Korea</p>
           </div>
         </div>
 
@@ -177,15 +224,14 @@
       <div class="content has-text-justified">
         <ul>
           <li>
-            One <strong style="color: red;">Best STEAR Demo</strong> award ($1,000), one
-            <strong style="color: red;">Reflection Runner-Up</strong> ($500), and one
-            <strong style="color: red;">Adaptation Runner-Up</strong> ($500) will be announced during the workshop,
-            sponsored by Abaka AI.
+            STEAR is being prepared for <strong>ICRA 2027</strong>, held May 24–28, 2027 at Coex in Seoul,
+            Republic of Korea.
           </li>
           <li>
-            All submissions must follow the <strong>CoRL 2026 format</strong>. Please refer to the official
-            <a href="https://www.corl.org/contributions/instruction-for-authors" target="_blank">CoRL 2026 Instructions for Authors</a>
-            for detailed formatting instructions.
+            Workshops and tutorials will take place on May 24 or May 28. The exact STEAR date, room, and
+            participant submission deadlines will be announced after the ICRA 2027 workshop notification.
+            See the official
+            <a href="https://2027.ieee-icra.org/contribute/call-for-workshop-and-tutorial/" target="_blank" rel="noopener">ICRA 2027 workshop and tutorial information</a>.
           </li>
         </ul>
       </div>
@@ -258,9 +304,9 @@
 
 <section class="section" id="schedule">
   <div class="container is-max-desktop content">
-    <h2 class="title">Schedule</h2>
+    <h2 class="title">Preliminary Schedule</h2>
     <p class="subtitle is-6 has-text-centered" style="margin-bottom: 1rem;">
-      All times are relative to the workshop start. The exact date and time are TBD.
+      The final ICRA 2027 workshop date, session time, and room are TBD. Times below are relative to the workshop start.
     </p>
     <div class="content has-text-justified">
       <table class="table table-striped">
@@ -293,7 +339,8 @@
     <h2 class="title" id="dates">Call for Papers</h2>
 
     <p>
-      We will solicit non-archival extended abstracts of up to 4 pages, excluding references, in the CoRL format.
+      We plan to solicit non-archival extended abstracts of up to 4 pages, excluding references, using the
+      IEEE conference paper template.
       Submissions should address self-improving robot learning from physical experience, with emphasis on execution
       traces, scene replay, causal reflection, auto-labeling, safe planning, and verified policy adaptation.
       <br><br>
@@ -302,7 +349,8 @@
       Accepted papers will not be published in proceedings, allowing the workshop to support early ideas and follow-up
       submissions.
       <br><br>
-      Submissions will be handled through OpenReview using a double-blind process.
+      We plan to handle submissions through OpenReview using a double-blind process. The submission site,
+      template link, and deadlines will be announced after the ICRA 2027 workshop notification.
     </p>
 
     <br>
@@ -455,6 +503,8 @@
       <div class="content has-text-left">
         <p>
           Contact: <a href="mailto:zhiwenfan@tamu.edu">zhiwenfan@tamu.edu</a>
+          <br>
+          Conference: <a href="https://2027.ieee-icra.org/" target="_blank" rel="noopener">ICRA 2027 · Seoul, Republic of Korea</a>
           <br><br>
           This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
